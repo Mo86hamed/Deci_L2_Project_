@@ -632,8 +632,9 @@ def choices1():
                                                                 print("your_total_score_is : [100]")
                                                                 time.sleep(2)
                                                                 print("congratulation , you win🎇🧨🎉🎊🎁🎀")
-                                                        else:
-                                                                print("you didn't choose any option , enter the true syntax����")
+                                                        
+
+        
                                                                 
                                                                 
                                                                 
