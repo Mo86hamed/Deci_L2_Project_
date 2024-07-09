@@ -699,3 +699,8 @@ repeat()
 
 
 
+
+
+#resources:
+        #https://www.google.com/search?q=how+can+i+repeat+my+code+python&rlz=1C1YTUH_arEG1059EG1059&oq=how+can+i+repeat+my+code+python&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg8MgYIAhBFGDzSAQkxNTA1MmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+        #https://ask.replit.com/t/how-do-i-loop-a-code-in-python/5683/2
