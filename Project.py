@@ -592,7 +592,7 @@ def choices1(score, turns):
                                                                 speak("fireee!!")
                                                                 time.sleep(1)
                                                                 print("the ship's crew saw you and they started to help you🚢🚢🚢")
-                                                                speak("the ship's crew saw you and they started to help you🚢🚢🚢")
+                                                                speak("the ship's crew saw you and they started to help you")
                                                                 time.sleep(1)
                                                                 score+=110
                                                                 time.sleep(2)
@@ -725,8 +725,8 @@ def choices1(score, turns):
                                                         speak("every one feel fear ")
                                                         time.sleep(1)
                                                         monster=input("""you have two choice: 1 - you and the other men won't do anything 
-                                                                        or
-                                                                        2 - you will try with the other men to kill this monster""")
+                                or
+                                2 - you will try with the other men to kill this monster\n""")
                                                         
                                                         # here the player will lose the game ..
                                                         # here the player and other men will be killed by the monster ..
@@ -784,7 +784,7 @@ def choices1(score, turns):
                                                                 speak("then all of you started to make houses and plant fruits")
                                                                 time.sleep(1)
                                                                 print("soon.......you think why you don't write on the beach big 'S.O.S' word ")
-                                                                speak("soon.......you think why you don't write on the beach big 'S.O.S' word ")
+                                                                speak("soon.......you think why you don't write on the beach big 'S O S' word ")
                                                                 time.sleep(2)
                                                                 print(".")
                                                                 time.sleep(1)
@@ -886,10 +886,12 @@ text_turtle.write("Thank you for playing ❤", align="center", font=("Arial",24,
 
 # another turtle
 heart_turtle=turtle.Turtle()
+heart_turtle.speed(6)
 heart_turtle.color("red")
 heart_turtle.pensize(3)
 heart_turtle.penup()
 heart_turtle.goto(0, -150)  
+
 heart_turtle.pendown()
 
 #adjust your heart
@@ -909,6 +911,15 @@ def draw_heart(t):
 
 # Draw the heart
 # story()
+choice_story()
+
+choices1(0,0)
+# story()
+draw_heart(heart_turtle)
+
+
+heart_turtle.hideturtle()
+turtle.done()
 
 def repeat():
         # score=0
@@ -947,17 +958,8 @@ def repeat():
                 
 # speak(next)
 # story()
-choice_story()
-
-# choices1(0,0)
-# story()
-# draw_heart(heart_turtle)
-
-
-# heart_turtle.hideturtle()
 
 # # Keep the window open 
-# turtle.done()
 
 repeat()
 
@@ -969,5 +971,5 @@ repeat()
 #resources:
         #https://www.quora.com/How-do-you-make-your-computer-speak-using-Python-or-any-other-programming-language-not-C
         #https://www.google.com/search?q=how+can+make+sound+in+python+that+speak&sca_esv=1aa700937aa37790&sca_upv=1&rlz=1C1YTUH_arEG1059EG1059&sxsrf=ADLYWIKgB5Uy6sqxkuBuJS7bvT4JqU1lDQ%3A1720755816865&ei=aKaQZqzGNOeXhbIPypWF4AM&ved=0ahUKEwismtb5yqCHAxXnS0EAHcpKATwQ4dUDCA8&uact=5&oq=how+can+make+sound+in+python+that+speak&gs_lp=Egxnd3Mtd2l6LXNlcnAiJ2hvdyBjYW4gbWFrZSBzb3VuZCBpbiBweXRob24gdGhhdCBzcGVha0gAUABYAHAAeACQAQCYAQCgAQCqAQC4AQPIAQCYAgCgAgCYAwCSBwCgBwA&sclient=gws-wiz-serp
-        #then i asked chat gpt to give me an example to know how it run
-        #chat gpt also helped me in some codes in turtle
+        #then i asked chat gpt to give me an example to know how it run and learn how it works ((the sound)).
+        
