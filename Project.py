@@ -42,7 +42,7 @@ def set_voice():
     # Set the selected voice based on user input
         try:
                 choice_index = int(type_choice) - 1
-                if 0<=choice_index<len(voices):
+                if 0 <= choice_index < len(voices):
                         engine.setProperty('voice', voices[choice_index].id)
                         print(f"Selected voice: {voices[choice_index].name}")
                 else:
@@ -71,7 +71,7 @@ def story():
           ███ ███   ██       ██  ██      ██   ██  ██ ██ ██  ██      
            █   █     ▀█▄▄▄▀ ▄██▄  ▀█▄▄▄▀  ▀█▄▄█▀ ▄██ ██ ██▄  ▀█▄▄▄▀ """)
 
-        name_list=["Khalid","Mohamed","Ahmed","Hamza","Ali","Zyad"]
+        name_list = ["Khalid","Mohamed","Ahmed","Hamza","Ali","Zyad"]
         random_name = random.choice(name_list)
         print(f"Your total score is: [{score}]")
         speak(f"Your total score is: [{score}]")
@@ -169,7 +169,7 @@ def story():
 def choice_story():
         while True:
                 speak("Enter your choice [1, 2, or 3]:")
-                choice=input("Enter your choice [1, 2, or 3]:\n ")
+                choice = input("Enter your choice [1, 2, or 3]:\n ")
                 if choice in ["1","2","3"]:
                         return choice
                 else:
@@ -179,12 +179,12 @@ def choice_story():
 # Choices in the story
 def choices1(score, turns):
         global choice
-        choice=choice_story()
-        turns+=0
+        choice = choice_story()
+        turns += 0
         
         # choice NO. 1 is talking about that you choose that you will help your self.
-        if choice=='1':
-                                score+=20
+        if choice == '1':
+                                score += 20
                                 time.sleep(2)
                                 print("After thinking")
                                 speak("After thinking")
@@ -193,7 +193,7 @@ def choices1(score, turns):
                                 speak("You chose that you will help yourself")
                                 time.sleep(1.5)
                                 print("You found the lifeboat 🚤🚤")
-                                speak("You found the lifeboat 🚤🚤")
+                                speak("You found the lifeboat ")
                                 time.sleep(1)
                                 print("After doing your best, you managed to survive")
                                 speak("After doing your best, you managed to survive")
@@ -306,11 +306,11 @@ def choices1(score, turns):
                                 speak("You have just 2 choices")
                                 time.sleep(1)
 
-                                last_bullet=input("""Either the first choice 1: you won't shoot the last bullet
+                                last_bullet = input("""Either the first choice 1: you won't shoot the last bullet
                         Or
                         the second choice 2: you will try your last chance and shoot it\n""")
 # here the playr will win the game
-                                if last_bullet=="1":
+                                if last_bullet == "1":
                                         time.sleep(2)
                                         print("For your bad luck, the ship has gone without you")
                                         speak("For your bad luck, the ship has gone without you")
@@ -334,7 +334,7 @@ def choices1(score, turns):
 
 
 #in this the player will lose the game
-                                elif last_bullet=="2":
+                                elif last_bullet == "2":
                                         time.sleep(2)
                                         print("You have shot it")
                                         speak("You have shot it")
@@ -360,7 +360,7 @@ def choices1(score, turns):
                                         print("Finally, you died")
                                         speak("Finally, you died")
                                         time.sleep(1)
-                                        score-=40
+                                        score -= 40
                                         print("Sorry, you lose 😭😭")
                                         speak("Sorry, you lose ")
                                         time.sleep(1)
@@ -391,7 +391,7 @@ def choices1(score, turns):
 
                 # choice = choice_story()
                 
-        elif choice=="2":
+        elif choice == "2":
                                                         print("after thinking")
                                                         speak("after thinking")
                                                         time.sleep(1)
@@ -472,7 +472,7 @@ def choices1(score, turns):
                                                         time.sleep(1)
                                                         print("you felt proud of your brother")
                                                         speak("you felt proud of your brother")
-                                                        score+=40
+                                                        score += 40
 
                                                         time.sleep(1)
                                                         
@@ -498,11 +498,11 @@ def choices1(score, turns):
                                                         time.sleep(1)
                                                         print(".")
                                                         time.sleep(1)
-                                                        predestination=input("you have two choices : 1 - don't help your family and wait till it go 2 - you will attack it and try to help you family\n")
+                                                        predestination = input("you have two choices : 1 - don't help your family and wait till it go 2 - you will attack it and try to help you family\n")
                                                         # predestination=speak("you have two choices : 1 - don't help your family and wait till it go 2 - you will attack it and try to help you family")
                                                         # her the player will lose the game.
                                                         # her the player will be killed by the shark.
-                                                        if predestination=="1":
+                                                        if predestination == "1":
                                                                 time.sleep(2)
                                                                 print("you choose that you won't help your family")
                                                                 speak("you choose that you won't help your family")
@@ -525,7 +525,7 @@ def choices1(score, turns):
                                                                 print("in the end , all of are died")
                                                                 speak("in the end , all of are died")
                                                                 time.sleep(1)
-                                                                score-=40
+                                                                score -= 40
                                                                 
                                                                 print("sorry , you lose😭😭")
                                                                 speak("sorry , you lose")
@@ -534,7 +534,7 @@ def choices1(score, turns):
                                                                 
 
                                                         # here the player will win the game
-                                                        elif predestination=="2":
+                                                        elif predestination == "2":
                                                                 time.sleep(2)
                                                                 print("you choose you will attack it and try to help you family")
                                                                 speak("you choose you will attack it and try to help you family")
@@ -617,7 +617,7 @@ def choices1(score, turns):
                 # choice = choice_story()
 
 
-        elif choice=="3":
+        elif choice == "3":
                                                         time.sleep(2)
                                                         print("after thinking")
                                                         speak("after thinking")
@@ -644,7 +644,7 @@ def choices1(score, turns):
                                                         speak("the sun is rising and You woke up from your sleep, cause of the sun")
                                                         time.sleep(2)
                                                         print("your_total_score_is : [30]")
-                                                        speak("your_total_score_is : [30]")
+                                                        speak("your total score is 30")
                                                         time.sleep(1)
                                                         print("You started exploring the lifeboat")
                                                         speak("You started exploring the lifeboat")
@@ -732,7 +732,7 @@ def choices1(score, turns):
                                                         # here the player and other men will be killed by the monster ..
                                                         
                                                         
-                                                        if monster=="1":
+                                                        if monster == "1":
                                                                 time.sleep(2)
                                                                 print("all of were feel fear")
                                                                 speak("all of were feel fear")
@@ -764,7 +764,7 @@ def choices1(score, turns):
                                                                 
                                                                 # here the player will win the game..
 
-                                                        elif monster=="2":
+                                                        elif monster == "2":
                                                                 time.sleep(2)
                                                                 print("you and the other men start to attack at the same time")
                                                                 speak("you and the other men start to attack at the same time")
@@ -808,7 +808,7 @@ def choices1(score, turns):
                                                                 print("soon you  saw the helicopter came to help you")
                                                                 speak("soon you  saw the helicopter came to help you")
                                                                 
-                                                                score+=80
+                                                                score += 80
                                                                 time.sleep(1)
                                                                 print(".")
                                                                 time.sleep(1)
@@ -862,7 +862,7 @@ def choices1(score, turns):
 
         return score , turns
 
-score,turns=0,0
+score,turns = 0,0
 # set_voice()
 
 # choices1()
@@ -873,7 +873,7 @@ story()
 screen=turtle.Screen()
 screen.title("Thank You for Playing ❤")
 screen.bgcolor("white")
-screen.setup(width=800, height=600)  
+screen.setup(width = 800, height = 600)  
 
 # turtle draw text
 text_turtle=turtle.Turtle()
@@ -931,24 +931,24 @@ def repeat():
 
 
                 restart=input("Do you want to restart? 1. Yes 2. No:🙂🙂 \n")
-                if restart.lower() in ["yes","no", "1", "2"]:
+                if restart.lower() in ["yes", "no", "1", "2"]:
                         break
                 else:
                         print("please enter only 1 or 2😡😡")
 
-        if restart.lower()=="yes" or restart.lower()=="1":
+        if restart.lower() == "yes" or restart.lower() == "1":
                 print("Restarting game")
                 # speak()
                 # speak()
                 story()
                 
                 # choice_story()
-                choices1(0,0)
+                choices1(0, 0)
 
                 repeat()
 
                 
-        elif restart.lower()=="2" or restart.lower()=="2":
+        elif restart.lower() == "no" or restart.lower() == "2":
                 # else:
                 print("Exiting game")
                 return
